@@ -122,7 +122,7 @@
             //圆属性
             var r = options.cH / 2; //圆心
             var cR = r - 6; //圆半径 决定圆的大小
-            var IsdrawCircled = false;//判断页面高度是否到达
+            
             var drawCircle = function(ctx){
                 ctx.beginPath();
                 ctx.strokeStyle = options.lineColor;
@@ -133,14 +133,12 @@
                 ctx.clip();
 
             };
-
+            drawCircle(ctx);//画圆
             (function drawFrame(){
 
                 window.requestAnimationFrame(drawFrame);
                 ctx.clearRect(0, 0, options.cW, options.cH);
-                if(IsdrawCircled == false){
-                    drawCircle(ctx);
-                }
+                
                 //高度改变动画参数
 
                 if (options.nowRange <= options.baseY) {
