@@ -28,9 +28,11 @@
     </style>
 </head>
 <body>
-<canvas id="canvas" width="100%" height="100%"></canvas>
+<canvas id="canvas" width="400px" height="400px"></canvas>
 <h3 id="num">50</h3>
 <input type="range" id="r" min="0" max="100" step="1" value="50">
+<canvas id="canvas2" width="600px" height="600px"></canvas>
+
 <script src="js/render.js"></script>
 <script>
     var option={
@@ -39,15 +41,21 @@
         baseY:50,
         nowRange:0
     };
-    waterPolo('canvas',option);
+    var abc=new WaterPolo('canvas',option);
+    
+    var cds=new WaterPolo('canvas2');
+    
     document.getElementById('r').addEventListener('input',function(){
         var num=parseInt(this.value);
         var numBox=document.getElementById('num');
         option.nowRange=parseInt(numBox.innerText);
         numBox.innerText=num;
         option.baseY=num;
-        waterPolo('canvas',option);
+        abc.options=option;
+       
     });
+
+
 
 </script>
 </body>
