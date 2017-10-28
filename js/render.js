@@ -12,18 +12,19 @@
         module.exports = factory();
     }else{
         //window
-        window.waterPolo = factory();
+        window.WaterPolo = factory();
     }
 
-}(typeof window !== "undefined" ? window : this, function(selector,userOptions){//采用window作为传入参数，可以将window作为局部变量，这样jquery访问window对象时，不需要将作用域链退回到顶部作用域
-    var waterPolo=function(selector,userOptions){
+}(typeof window !== "undefined" ? window : this, function(selector,userOptions){
+//采用window作为传入参数，可以将window作为局部变量，这样jquery访问window对象时，不需要将作用域链退回到顶部作用域
+
+    var WaterPolo=function(selector,userOptions){
 
         'user strict';
-
+        
         var options={
             //容器距边缘的距离
             wrapW:3,
-
 
             //canvas属性
             cW:300,
@@ -66,11 +67,23 @@
             speed:0.2
         };
 
-        //全局变量
+        
         var canvas = null,
             ctx = null,
             W = null,
             H = null;
+
+
+        Object.defineProperty(this, 'options', {  
+                get: function() {  
+                    return options;  
+                },  
+                set: function(value) { 
+                    
+                    mergeOption(value,options);
+                }  
+            }); 
+         
 
         //参数混合相当于$.extend([old],[new])
         var mergeOption=function(userOptions,options){
@@ -104,10 +117,11 @@
             ctx.restore();
         };
 
-
-
         //初始化设置
-        var init=function(selector,userOptions){
+        //init(selector,that,userOptions)
+
+        var init=function(){
+            
             mergeOption(userOptions,options);
 
 
@@ -134,9 +148,11 @@
 
             };
             drawCircle(ctx);//画圆
+
             (function drawFrame(){
 
                 window.requestAnimationFrame(drawFrame);
+
                 ctx.clearRect(0, 0, options.cW, options.cH);
                 
                 //高度改变动画参数
@@ -158,12 +174,12 @@
 
             }());
 
-
+            
         };
-
-        init(selector,userOptions)
+        init();
+        
     };
-    return waterPolo;
+    return WaterPolo;
 }));
 
 
