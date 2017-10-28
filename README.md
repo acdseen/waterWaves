@@ -3,8 +3,9 @@
 引入
 ```
 <script src='render.js'></script>
+//AMD/CMD
+require('render')
 ```
-或者在 AMD/CMD 环境中通过 require('render') 获得
 使用
 ```
  waterPolo('canvas');
