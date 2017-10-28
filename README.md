@@ -2,9 +2,9 @@
 ## 使用方法
 引入
 ```
-<script src='render.js'></script>
+<script src='waterPolo.js'></script>
 //AMD/CMD
-require('render')
+require('waterPolo')
 ```
 使用
 ```
