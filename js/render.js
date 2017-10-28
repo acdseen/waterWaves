@@ -22,6 +22,8 @@
 
         'user strict';
         
+        userOptions=userOptions||{};
+
         var options={
             //容器距边缘的距离
             wrapW:3,
@@ -118,12 +120,10 @@
         };
 
         //初始化设置
-        //init(selector,that,userOptions)
 
         var init=function(){
             
             mergeOption(userOptions,options);
-
 
             canvas=document.getElementById(selector);
             ctx=canvas.getContext('2d');
