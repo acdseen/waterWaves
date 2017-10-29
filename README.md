@@ -45,4 +45,4 @@ var options={
     speed:0.2
     }
 ```
-
+![img](https://github.com/acdseen/acdseen.github.io/blob/master/img/7.gif)
