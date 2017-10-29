@@ -45,5 +45,4 @@ var options={
     speed:0.2
     }
 ```
-## demo
-[codepen_embed height="302" theme_id="0" slug_hash="zPYmPY" default_tab="result" user="262"]See the Pen <a href='https://codepen.io/262/pen/zPYmPY/'>zPYmPY</a> by acdseen  (<a href='https://codepen.io/262'>@262</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+
