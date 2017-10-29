@@ -1,5 +1,9 @@
 # 这是水滴球动画
+
+![img](https://github.com/acdseen/acdseen.github.io/blob/master/img/8.gif)
+
 ## 使用方法
+
 **引入**
 ```
 <script src='waterPolo.js'></script>
@@ -56,4 +60,4 @@ var options={
     speed:0.2
     }
 ```
-![img](https://github.com/acdseen/acdseen.github.io/blob/master/img/8.gif)
+
