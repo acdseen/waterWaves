@@ -1,16 +1,27 @@
 # 这是水滴球动画
 ## 使用方法
-引入
+**引入**
 ```
 <script src='waterPolo.js'></script>
 //AMD/CMD
 require('waterPolo')
 ```
-使用
+**使用**
 ```
- waterPolo('canvas');
+ //var a=new WaterPolo('canvas');
+ //你对默认属性不喜欢的，也可以传入一些新属性
+var newOptions={
+    cW:130,
+    cH:130,
+    baseY:50,
+    nowRange:0
+};
+var a=new WaterPolo('canvas',newOptions);
+//更新属性
+newOptions.baseY=40;
+a.options=newOptions;
 ```
-配置项
+**配置项**
 ```
 var options={
     //容器距边缘的距离
@@ -45,4 +56,4 @@ var options={
     speed:0.2
     }
 ```
-![img](https://github.com/acdseen/acdseen.github.io/blob/master/img/7.gif)
+![img](https://github.com/acdseen/acdseen.github.io/blob/master/img/8.gif)
