@@ -46,5 +46,4 @@ var options={
     }
 ```
 ## demo
-<iframe height='302' scrolling='no' title='zPYmPY' src='//codepen.io/262/embed/zPYmPY/?height=302&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/262/pen/zPYmPY/'>zPYmPY</a> by acdseen  (<a href='https://codepen.io/262'>@262</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+[codepen_embed height="302" theme_id="0" slug_hash="zPYmPY" default_tab="result" user="262"]See the Pen <a href='https://codepen.io/262/pen/zPYmPY/'>zPYmPY</a> by acdseen  (<a href='https://codepen.io/262'>@262</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
