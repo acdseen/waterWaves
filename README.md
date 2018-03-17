@@ -7,8 +7,7 @@
 **引入**
 ```
 <script src='waterPolo.js'></script>
-//AMD/CMD
-require('waterPolo')
+
 ```
 **使用**
 ```
