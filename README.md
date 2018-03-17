@@ -1,6 +1,6 @@
 # 这是水滴球动画
 
-![img](https://github.com/acdseen/acdseen.github.io/blob/master/img/8.gif)
+![img](https://github.com/acdseen/acdseen.github.io/blob/master/img/7.gif)
 
 ## 使用方法
 
