@@ -1,6 +1,6 @@
 ﻿/*
  * 2017.7.24
- * author:acdSeen
+ * author: guangtina@gmail.com
  * */
 (function(window,factory){
 
@@ -156,14 +156,12 @@
                 ctx.clearRect(0, 0, options.cW, options.cH);
                 
                 //高度改变动画参数
-
+                var tmp = 1;
                 if (options.nowRange <= options.baseY) {
-                    var tmp = 1;
                     options.nowRange += tmp;
                 }
 
                 if (options.nowRange > options.baseY) {
-                    var tmp = 1;
                     options.nowRange -= tmp;
                 }
                 makeLiquaid(ctx,options.oneOffsetX,options.oneWaveWidth,options.oneWaveHeight,options.oneColor);
