@@ -1,47 +1,46 @@
 <template>
   <div class="waterwaves">
     <canvas id="canvas" width="400px" height="400px"></canvas>
-    <slot v-if="$slots.title"></slot>
-    <template v-else>
-      <h3 class="num">{{ baseY }}</h3>
-      <input type="range" class="swipe" min="0" max="100" step="1" v-model="baseY" />
-    </template>
   </div>
 </template>
 
 <script>
-import waterwaves from "./waterwaves";
+import WaterPolo from "./waterwaves.js";
 
 export default {
+  name: "WaterWaves",
   props: {
     // 水平线
     value: {
-      type: Number,
+      type: String || Number,
       default: 50
     },
+    // 配置参数
     options: {
       type: Object,
-      default: () => ({
-        cW:130,
-        cH:130,
-      })
+      default: () => ({})
     }
   },
   data() {
     return {
-      baseY: this.value,
       waterwaves: null
     };
   },
   watch: {
-    baseY(newVal, oldVal) {
+    value(newVal) {
       this.waterwaves.options.baseY = newVal;
-      this.$emit("input", newVal);
+      this.$emit("change", newVal);
+    },
+    options(newVal) {
+      Object.keys(newVal).map(key => {
+        this.waterwaves.options[key] = newVal[key];
+      });
     }
   },
   methods: {
     initWaterWaves() {
-      this.waterwaves = new WaterPolo("canvas", {...this.options,baseY:this.baseY});
+      console.log(WaterPolo)
+      this.waterwaves = new WaterPolo("canvas", { ...this.options, baseY: this.value });
     }
   },
   mounted() {

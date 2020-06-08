@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <WaterWaves />
+    <Example />
   </div>
 </template>
 
 <script>
-import WaterWaves from './lib/waterwaves.vue'
+import Example from './components'
 
 export default {
   name: 'app',
   components: {
-    WaterWaves
+    Example
   }
 }
 </script>
