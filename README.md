@@ -22,10 +22,6 @@ import WaterWaves from 'waterwaves'
 
 Vue.use(WaterWaves)
 ```
-or
-```
-<script src="js/waterPolo.js"></script>
-```
 
 ### 基本用法
 ```

@@ -13,7 +13,7 @@ export default {
     // 水平线
     value: {
       type: String || Number,
-      default: 50
+      default: '50'
     },
     // 配置参数
     options: {
