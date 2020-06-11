@@ -39,7 +39,6 @@ export default {
   },
   methods: {
     initWaterWaves() {
-      console.log(WaterPolo)
       this.waterwaves = new WaterPolo("canvas", { ...this.options, baseY: this.value });
     }
   },
@@ -49,19 +48,4 @@ export default {
 };
 </script>
 
-<style scope>
-.swipe::before {
-  color: black;
-  content: attr(min);
-  padding-right: 10px;
-}
-.swipe::after {
-  color: black;
-  content: attr(max);
-  padding-left: 10px;
-}
-
-.num {
-  text-align: center;
-}
-</style>
+<style></style>
