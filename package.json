@@ -13,7 +13,7 @@
   ],
   "files": [
     "lib",
-    "example"
+    "scripts"
   ],
   "scripts": {
     "serve": "vue-cli-service serve src/example/main.js --open --mode local",

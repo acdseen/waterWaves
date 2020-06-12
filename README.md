@@ -6,7 +6,7 @@
 
 ## Demo
 
-https://sortablejs.github.io/Vue.Draggable/
+http://acdtech.top/waterWaves/
 
 ## 插件的安装
 
