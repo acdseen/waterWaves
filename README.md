@@ -24,7 +24,7 @@ Vue.use(WaterWaves)
 ```
 or
 ```
-<script src="js/waterPolo.js"></script>
+<script src="node_modules/waterwaves/scripts/WaterPolo.umd.min.js"></script>
 ```
 
 ### 基本用法

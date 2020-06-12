@@ -1,10 +1,10 @@
 {
   "name": "waterwaves",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "private": false,
   "license": "MIT",
   "author": "linhong",
-  "main": "lib/vuewaterwaves.umd.min.js",
+  "main": "lib/waterwaves.umd.min.js",
   "keywords": [
     "water",
     "waterwaves",
@@ -16,9 +16,11 @@
     "example"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve src/example/main.js",
-    "build": "npm run lib && vue-cli-service build --dest docs src/example/main.js",
-    "lib": "vue-cli-service build --target lib --name vuewaterwaves --dest lib src/lib/index.js",
+    "serve": "vue-cli-service serve src/example/main.js --open --mode local",
+    "build:umd": "vue-cli-service build --target lib --name waterwaves --dest lib src/lib/index.js",
+    "build:scripts": "vue-cli-service build --target lib --name WaterPolo --dest scripts src/lib/waterwaves.js",
+    "build:docs": "vue-cli-service build --dest docs src/example/main.js",
+    "build": "npm run build:umd && npm run build:scripts && npm run build:docs",
     "lint": "vue-cli-service lint",
     "pub": "sh ./publish.sh"
   },

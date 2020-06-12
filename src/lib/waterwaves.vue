@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import WaterPolo from "./waterwaves.js";
+import WaterPolo from "./waterwaves";
 
 export default {
   name: "WaterWaves",

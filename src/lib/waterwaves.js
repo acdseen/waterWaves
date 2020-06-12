@@ -158,4 +158,4 @@
   init();
 };
 
-export default WaterPolo
+export default WaterPolo;
